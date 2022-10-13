@@ -382,12 +382,12 @@ h2 {
 input {
     border: 1.5px solid #000;
     padding-left: 5px;
-    min-width: 30vw;
+    min-width:50vw;
 }
 textarea {
     border: 1.5px solid #000;
     padding-left: 5px;
-    min-width: 30vw;
+    min-width: 50vw;
 }
 
 input:focus {
