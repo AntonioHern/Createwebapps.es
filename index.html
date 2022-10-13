@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="system.css">
+    <!--    <link rel="stylesheet" href="docs.css">-->
+</head>
+<body ontouchstart>
+<div class="container-fluid">
+    <div class="layout">
+        <div class="row">
+            <div class="col-lg-3 col-sm-12 col-md-5 col-main">
+                <div class="window sidebar">
+                    <div class="title-bar">
+                        <button aria-label="Close" class="close"></button>
+                        <h1 class="title">Docs</h1>
+                        <button aria-label="Resize" class="resize"></button>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="window-pane">
+                        <ul class="menu-items">
+                            <li><a href="#intro">Intro</a></li>
+                            <li>Proyectos
+                                <ul>
+                                    <li><a href="#adminajax">Admin Ajax</a></li>
+                                    <li><a href="#dialogbot">Dialog Bot</a></li>
+                                    <li><a href="#covid">Covid</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="window sidebar">
+                    <div class="title-bar">
+                        <button aria-label="Close" class="close"></button>
+                        <h1 class="title">Créditos</h1>
+                        <button aria-label="Resize" class="resize"></button>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="window-pane center">
+                        <h1 class="dialog-text">Desarrollado por Createwebapps.es</h1>
+                        <p class="dialog-text">&copy; 2022 Createwebapps.es</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-sm-12 col-md-7 pt-3 pb-5">
+                <div class="standard-dialog">
+                    <div class="window_derecha">
+                        <div class="title-bar">
+                            <button aria-label="Close" class="close"></button>
+                            <h1 class="title">Title Bar</h1>
+                            <button aria-label="Resize" class="resize"></button>
+                        </div>
+                    </div>
+                    <h1 class="center logo">Createwebapps.es</h1>
+                    <p class="desc center pt-2 pb-2">Desarrollo web a medida, aplicaciones, tiendas online, sitios web
+                        etc..</p>
+                    <h2 class="subheading" id="intro">Intro</h2>
+
+                    <p>Mi nombre es Antonio y soy programador web desde hace 3 años, tengo amplios conocimientos en
+                        lenguajes como
+                        PHP, html, javascript, css y en base de datos Mysql u Oracle, frameworks como Laravel, React,
+                        Node.</p>
+                    <p>¿Quieres empezar a desarrollar en iOS y no sabes por dónde empezar? ¡Escríbeme y algún consejo te
+                        podré
+                        dar!</p>
+                    <p>Si crees que puedo ayudar a un proyecto que estés desarrollando ¡Contáctame!</p>
+
+                    <h2 class="subheading" id="proyectos">Proyectos</h2>
+                    <p class="desc" id="adminajax">
+                        <a href="https://github.com/AntonioHern/adminAjax" target="_blank">Admin Ajax</a>
+                    </p>
+
+                    <p>Proyecto desarrollado en Laravel, con PHP y Javascript. </p>
+                    <p>Es un proyecto que consiste en una aplicación web para la gestión de usuarios de una residencia,
+                        para llevar
+                        el control de sus medicinas y la preparación de sus diferentes pastilleros.</p>
+                    <p>Consta con un sistema de avisos por notificaciones vía email para avisar cuando a algún usuario
+                        le queda poca medicina.</p>
+                    <p>También tiene un sistema de mensajería interna entre usuarios de la aplicación.</p>
+
+                    <p class="desc" id="dialogbot">
+                        <a href="https://github.com/AntonioHern/DialogBot" target="_blank">Dialog Bot</a>
+                    </p>
+                    <p>Dialog Bot es un proyecto desarrollado en Node utilizando la herramienta de Google, <strong>
+                        DialogFlow</strong>, que permite crear un chatbot para una página web.</p>
+                    </strong></p>
+                    <p>Puede almacenar datos en una BBDD nosql como MongoDB, consta de un lenguaje fluido y capaz de
+                        entender el contexto del cual se le está hablando</p>
+
+
+                    <p class="desc" id="covid">
+                        <a href="https://github.com/AntonioHern/Covid" target="_blank">Covid</a>
+                    </p>
+                    <p>Aplicación desarrollada en Laravel con PHP y Javascript, consiste en una serie de gráficas por
+                        países más relevantes para ver datos de casos de Covid 19 tanto de infectados, muertes y
+                        recuperaciones</p>
+
+                    <p>La aplicación obtiene los datos de una API externa y se actualiza diariamente sin necesidad de
+                        ninguna clase de mantenimiento</p>
+
+                    <h2 class="subheading" id="contacto">Contacto</h2>
+                    <p>Puedes ponerte en contacto conmigo para cualquier proyecto o desarrollo en el email:
+                    <p class="desc center pt-2 pb-2">
+                        <a href="mailto:info@createwebapps.es">info@createwebapps.es</a>
+                    </p>
+                    </p>
+
+                    <p>O rellenando el siguiente formulario de contacto:</p>
+                    <div class="center pb-3">
+                        <div class="window_derecha">
+                            <div class="title-bar">
+                                <button aria-label="Close" class="close"></button>
+                                <h1 class="title">Contact Form</h1>
+                                <button aria-label="Resize" class="resize"></button>
+                            </div>
+                        </div>
+                        <form>
+                            <label for="text_email">Email</label><br>
+                            <input id="text_email" type="email" placeholder="panic@thedis.co"/><br>
+                            <label for="text_nombre">Nombre</label><br>
+                            <input id="text_nombre" type="text" placeholder="password"/><br><br>
+                            <label for="text_mensaje">Mensaje</label><br>
+                            <textarea id="text_mensaje" rows="4" cols="50" placeholder="Mensaje"></textarea><br><br>
+                            <button class="btn float-right" type="submit">Submit</button>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="standard-dialog center scale-down pt-3 mt-2">
+                    <h1 class="dialog-text">Desarrollado por Createwebapps.es</h1>
+                    <p class="dialog-text">&copy; 2022 Createwebapps.es</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+</html>
