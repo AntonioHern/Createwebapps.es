@@ -19,7 +19,8 @@ $( document ).ready(function() {
                 data: {
                     email: email,
                     nombre: nombre,
-                    mensaje: mensaje
+                    mensaje: mensaje,
+                    subject: 'Contacto desde la web'
                 },
                 success: function (data) {
                     console.log(data);
