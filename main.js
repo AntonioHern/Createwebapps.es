@@ -13,7 +13,7 @@ $( document ).ready(function() {
               $('#alerta').show();
         } else {
             $.ajax({
-                url: 'enviar.php',
+                url: 'mailer.php',
                 type: 'POST',
                 data: {
                     email: email,
@@ -29,7 +29,7 @@ $( document ).ready(function() {
 
     $('#ok').click(function (e) {
         e.preventDefault();
-        $('#alerta').hide();
+        $('#alerta').slideDown();
     })
 
 });
