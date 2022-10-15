@@ -41,7 +41,12 @@ $( document ).ready(function() {
 
     $('#ok').click(function (e) {
         e.preventDefault();
-        $('#alerta').slideDown();
+        $('#alerta').fadeOut('slow');
     })
+
+    $('.close_creditos').click(function (e) {
+        e.preventDefault();
+        $("#div_creditos").fadeOut('slow');
+    });
 
 });

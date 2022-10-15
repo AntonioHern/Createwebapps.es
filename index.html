@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Createwebapps.es</title>
     <link rel="shortcut icon" href="favicon.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="system.css">
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/system.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
 
-
-    <script src="main.js"></script>
 
     <!--    <link rel="stylesheet" href="docs.css">-->
 </head>
 <body ontouchstart>
 <div class="container-fluid">
     <div class="layout">
+
         <div class="row">
             <div class="col-lg-3 col-sm-12 col-md-5 col-main">
+                <div class="fixed">
                 <div class="window sidebar">
                     <div class="title-bar">
                         <button aria-label="Close" class="close"></button>
@@ -41,17 +40,18 @@
                         </ul>
                     </div>
                 </div>
-                <div class="window sidebar">
+                <div class="window sidebar" id="div_creditos">
                     <div class="title-bar">
-                        <button aria-label="Close" class="close"></button>
+                        <button aria-label="Close" class="close close_creditos"></button>
                         <h1 class="title">Créditos</h1>
-                        <button aria-label="Resize" class="resize"></button>
+                        <button aria-label="Resize" class="resize close_creditos"></button>
                     </div>
                     <div class="separator"></div>
                     <div class="window-pane center">
                         <h1 class="dialog-text">Desarrollado por Createwebapps.es</h1>
                         <p class="dialog-text">&copy; 2022 Createwebapps.es</p>
                     </div>
+                </div>
                 </div>
             </div>
 
@@ -78,6 +78,10 @@
                         dar!</p>
                     <p>Si crees que puedo ayudar a un proyecto que estés desarrollando ¡Contáctame!</p>
 
+
+                    <div class="spacer"></div>
+                    <div class="separator"></div>
+                    <div class="spacer"></div>
                     <h2 class="subheading" id="proyectos">Proyectos</h2>
                     <p class="desc" id="adminajax">
                         <a href="https://github.com/AntonioHern/adminAjax" target="_blank">Admin Ajax</a>
@@ -111,6 +115,9 @@
                     <p>La aplicación obtiene los datos de una API externa y se actualiza diariamente sin necesidad de
                         ninguna clase de mantenimiento</p>
 
+                    <div class="spacer"></div>
+                    <div class="separator"></div>
+                    <div class="spacer"></div>
                     <h2 class="subheading" id="contacto">Contacto</h2>
                     <p>Puedes ponerte en contacto conmigo para cualquier proyecto o desarrollo en el email:
                     <p class="desc center pt-2 pb-2">
@@ -143,8 +150,8 @@
 
                             </div>
                         </div>
-                    <div class="center pb-3">
 
+                    <div class="center pb-3">
 
                         <div class="window_derecha">
                             <div class="title-bar">
@@ -178,6 +185,6 @@
         </div>
     </div>
 </div>
-
+<script src="js/main.js"></script>
 </body>
 </html>

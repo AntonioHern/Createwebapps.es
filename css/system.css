@@ -1,22 +1,22 @@
 
 @font-face {
     font-family: Chicago;
-    src: url(ChicagoFLF.ttf)
+    src: url("../fonts/ChicagoFLF.ttf");
 }
 
 @font-face {
     font-family: Monaco;
-    src: url(monaco.ttf)
+    src: url("../fonts/monaco.ttf");
 }
 
 @font-face {
     font-family: Chicago_12;
-    src: url(ChiKareGo2.ttf)
+    src: url("../fonts/ChiKareGo2.ttf");
 }
 
 @font-face {
     font-family: Geneva_9;
-    src: url(FindersKeepers.ttf)
+    src: url("../fonts/FindersKeepers.ttf");
 }
 
 ::-webkit-scrollbar {
@@ -93,7 +93,7 @@
 
 body {
     background: linear-gradient(90deg, #fff 21px, transparent 1%) 50%, linear-gradient(#fff 21px, transparent 1%) 50%, #000;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     background-size: 22px 22px
 }
 
@@ -339,7 +339,7 @@ h2 {
 
 .btn {
     background: #fff;
-    border-image: url(button.png) 30 stretch;
+    border-image: url("../img/button.png") 30 stretch;
     border-style: solid;
     border-width: 5.5px;
     color: #000;
@@ -364,7 +364,7 @@ h2 {
 
 .btn:disabled {
     background: #fff;
-    border-image: url(button.png) 30 stretch;
+    border-image: url("../img/button.png") 30 stretch;
     border-style: solid;
     border-width: 5.5px;
     color: #b6b7b8;
@@ -645,12 +645,12 @@ ul [role=menu-item].divider:after {
 
 @font-face {
     font-family: Geneva9;
-    src: url("fonts/FindersKeepers.ttf")
+    src: url("../fonts/FindersKeepers.ttf")
 }
 
 @font-face {
     font-family: Chicago_12;
-    src: url("fonts/ChiKareGo2.ttf");
+    src: url("../fonts/ChiKareGo2.ttf");
 }
 
 
@@ -772,6 +772,11 @@ pre {
     width: 50%;
 }
 
+.spacer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .btn.active {
     background: black;
     border-radius:6px;
@@ -779,8 +784,15 @@ pre {
     font-family: Chicago_12;
 }
 
+.btn:hover {
+    background: black;
+    border-radius:6px;
+    color: white;
+    font-family: Chicago_12;
+}
+
 .square {
-    background-image: url("img/ecl.png");
+    background-image: url("../img/ecl.png");
     width: 52px;
     height: 52px;
     background-color: transparent;
@@ -808,6 +820,11 @@ pre {
        width: 32rem;
        margin-left: 22%;
    }
+
+    .fixed{
+        position: fixed;
+
+    }
 }
 
 
