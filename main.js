@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     console.log("ready!");
     $('#alerta').hide();
+    $('#respuesta').hide();
 
     $('#enviar').click(function (e) {
         e.preventDefault();
@@ -21,7 +22,17 @@ $( document ).ready(function() {
                     mensaje: mensaje
                 },
                 success: function (data) {
-                    alert(data);
+                    console.log(data);
+                    $('#respuesta').show();
+                    $('#respuesta').text('Mensaje enviado correctamente!');
+                    $('#text_email').val('');
+                    $('#text_nombre').val('');
+                    $('#text_mensaje').val('');
+                },
+                error: function (data) {
+                    console.log(data);
+                    $('#respuesta').show();
+                    $('#respuesta').text('Error al enviar el mensaje!');
                 }
             });
         }

@@ -384,11 +384,18 @@ input {
     padding-left: 5px;
     min-width:50vw;
 }
+
 textarea {
     border: 1.5px solid #000;
     padding-left: 5px;
-    min-width: 50vw;
+    min-width:50vw;
+    min-height: 10vh;
+    font-family: Chicago_12;
+    font-size: 18px;
+
 }
+
+
 
 input:focus {
     outline: none
